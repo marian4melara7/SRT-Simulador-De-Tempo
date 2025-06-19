@@ -28,3 +28,36 @@ Como executar:
 Abrindo um editor de código, ou abrindo um prompt de comando dentro do diretório aonde está o arquivo
 rodando o nome do arquivo, ex: python SRT.py (como é o título do nosso arquivo),
 assim ele irá executar o código.
+
+Analise dos Resultados, após rodar o código.
+Escalonamento SRT:
+Tempo | Processo    
+  0   |   P1      
+  1   |   P2       
+  2   |   P3
+  3   |   P3
+  4   |   P4
+  5   |   P2
+  6   |   P2
+  7   |   P2
+  8   |   P1
+  9   |   P1
+  10   |   P1
+  11   |   P1
+  12   |   P1
+  13   |   P1
+  14   |   P1
+
+Finalizados:
+  P3
+  P4
+  P2
+  P1
+Esse comportamento é esperado no algoritmo SRT, que:
+Sempre escolhe o processo com menor tempo restante, não importa quem começou antes.
+Faz interrupção de processos quando necessário.
+Dá vantagem para processos curtos que chegam depois.
+O motivo de P1 terminar por último, mesmo tendo chegado primeiro,
+é que ele foi interrompido várias vezes por processos com menor duração, o que é típico no SRT.
+
+
