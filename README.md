@@ -9,6 +9,7 @@ Julia Braccini
 Maria Eduarda B. Schulze
 Mariana Melara
 
+Breve Descrição:
 Este código simula o escalonamento de processos com o algoritmo SRT, que sempre escolhe o processo com o menor tempo restante de execução.
 Funcionamento:
 Cada processo tem um ID, um tempo de chegada e uma duração total.
