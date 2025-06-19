@@ -53,6 +53,7 @@ Finalizados:
   P4
   P2
   P1
+  
 Esse comportamento é esperado no algoritmo SRT, que:
 Sempre escolhe o processo com menor tempo restante, não importa quem começou antes.
 Faz interrupção de processos quando necessário.
